@@ -25,3 +25,8 @@ export const userRef = uid => usersRef().child(uid)
 export const quizRef = quizId => quizesRef().child(quizId)
 export const questionRef = questionId => questionsRef().child(questionId)
 export const tagRef = tagId => tagsRef().child(tagId)
+
+//Auth helpers
+export const getCurrentUser = () => firebase.auth().currentUser
+export const signInUserWithEmailAndPassword = (email, password) => firebase.auth().signInWithEmailAndPassword(email, password)
+export const createUserWithEmailAndPassword = (email, password) => firebase.auth().createUserWithEmailAndPassword(email, password)

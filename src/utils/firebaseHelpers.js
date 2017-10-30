@@ -1,5 +1,16 @@
 import firebase from 'firebase'
 
+//Firebase configuration
+const config = {
+    apiKey: "AIzaSyCwnY8vgg-n3rTBs-Xm3euBvdj2wKeUCX4",
+    authDomain: "quizlo-81d1c.firebaseapp.com",
+    databaseURL: "https://quizlo-81d1c.firebaseio.com",
+    projectId: "quizlo-81d1c",
+    storageBucket: "quizlo-81d1c.appspot.com",
+    messagingSenderId: "169851619173"
+  };
+
+export const initFire = () => firebase.initializeApp(config);
 
 
 //Primary refs
